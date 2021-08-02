@@ -16,3 +16,8 @@ function calculate() {
         document.getElementById('result').innerHTML = "Nada..."
     }
 }
+
+function clearOne() {
+    const result = document.getElementById('result').innerHTML;
+    document.getElementById('result').innerHTML = result.substring(0, result.length -1)
+  }

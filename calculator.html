@@ -10,21 +10,22 @@
 </head>
 <body>  
     <div class="back">
+        <h1 id="title">Gabriel João</h1>
         <div class="calculator">
             <h1>Calculator</h1>
             <p id="result"></p>
             <table>
                 <tr>
+                    <td><button id="clear" onclick="rase()">C</button></td>
+                    <td><button onclick="clearOne()"><</button></td>
                     <td></td>
-                    <td></td>
-                    <td><button onclick="rase()">C</button></td>
                     <td><button onclick="insert('/')">/</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('7')">7</button></td>
                     <td><button onclick="insert('8')">8</button></td>
                     <td><button onclick="insert('9')">9</button></td>
-                    <td><button onclick="insert('*')">X</button></td>
+                    <td><button onclick="insert('*')">x</button></td>
                 </tr>
                 <tr>
                     <td><button onclick="insert('4')">4</button></td>
@@ -42,7 +43,7 @@
                     <td></td>
                     <td><button onclick="insert('0')">0</button></td>
                     <td></td>
-                    <td><button onclick="calculate()">=</button></td>
+                    <td><button id="answered" onclick="calculate()">=</button></td>
                 </tr>
             </table>
         </div>
